@@ -65,5 +65,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package magit
   :ensure t
-  ;; :bind (("C-x g" . magit-status))
+  :bind (("C-x g" . magit-status))
 )
+
+(use-package flycheck
+  :ensure t
+  :init
+  (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+  (add-hook 'c-mode-hook 'flycheck-mode))
+
+(use-package flycheck-tip
+  :ensure t
+  :init
+  )
