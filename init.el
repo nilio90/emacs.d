@@ -23,6 +23,7 @@
 (require 'setup-programming)
 (require 'setup-text)
 (require 'setup-local)
+(require 'setup-helm)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -66,7 +67,7 @@
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-	(rainbow-mode color-theme-sanityinc-tomorrow flycheck-tip magit ibuffer-vc company-quickhelp company smartparens undo-tree yasnippet yasnippet-snippets diminish use-package)))
+	(helm-swoop helm helm-config rainbow-mode color-theme-sanityinc-tomorrow flycheck-tip magit ibuffer-vc company-quickhelp company smartparens undo-tree yasnippet yasnippet-snippets diminish use-package)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
