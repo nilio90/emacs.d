@@ -48,6 +48,15 @@
   :defer t
   :init (add-hook 'global-company-mode-hook #'company-quickhelp-mode))
 
+(use-package company-rtags
+  :ensure t
+  :config
+  (defun company-rtags-setup ()
+	"Configure company-backends for company-rtags"
+	(delete 'company-semantic company-backends)
+	(setq rtags-completions-enabled t)
+	(push '(company-rtags :with company-yasnippet) company-backends)))
+
 (use-package ibuffer
   :bind (([remap list-buffers] . ibuffer))
   ;; Show VC Status in ibuffer

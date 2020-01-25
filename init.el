@@ -48,6 +48,15 @@
 						 '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 (fullscreen)
+
+;; Testing rtags
+;; (rtags-enable-standard-keybindings)
+;; (setq rtags-autostart-diagnostics t)
+;; (rtags-diagnostics)
+
+
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -65,9 +74,16 @@
  '(fci-rule-color "#003f8e")
  '(flycheck-color-mode-line-face-to-color (quote mode-line-buffer-id))
  '(frame-background-mode (quote dark))
+ '(jdee-db-active-breakpoint-face-colors (cons "#1B2229" "#fd971f"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#b6e63e"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#525254"))
+ '(objed-cursor-color "#e74c3c")
  '(package-selected-packages
    (quote
-	(helm-swoop helm helm-config rainbow-mode color-theme-sanityinc-tomorrow flycheck-tip magit ibuffer-vc company-quickhelp company smartparens undo-tree yasnippet yasnippet-snippets diminish use-package)))
+	(indent-guide doom-themes company-rtags rtags helm-swoop helm helm-config rainbow-mode color-theme-sanityinc-tomorrow flycheck-tip magit ibuffer-vc company-quickhelp company smartparens undo-tree yasnippet yasnippet-snippets diminish use-package)))
+ '(pdf-view-midnight-colors (cons "#d6d6d4" "#1c1e1f"))
+ '(rustic-ansi-faces
+   ["#1c1e1f" "#e74c3c" "#b6e63e" "#e2c770" "#268bd2" "#fb2874" "#66d9ef" "#d6d6d4"])
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

@@ -1,4 +1,4 @@
-(provide 'setup-help)
+(provide 'setup-helm)
 
 (use-package helm
   :ensure t
@@ -17,3 +17,8 @@
 
 (use-package helm-swoop
   :ensure t)
+
+;; (use-package helm-pŕojectile
+;;   :ensure t
+;;   :config
+;;   (define-key))
