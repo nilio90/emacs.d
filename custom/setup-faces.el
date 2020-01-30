@@ -37,14 +37,7 @@
 (use-package doom-themes
   :ensure t
   :config
-  (setq doom-themes-enable-bold t
-		doom-themes-enable-italic t)
-  (load-theme 'doom-molokai t)
-  (doom-themes-visual-bell-config)
-  (doom-themes-neotree-config)
-  )
-(use-package doom-themes
-  :config
+  ;(load-theme 'doom-molokai t)
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
